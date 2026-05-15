@@ -9,7 +9,13 @@ project ("scribble")
 add_subdirectory(libs/glfw)
 
 # Add source to this project's executable.
-add_executable (scribble "src/scribble.cpp" "src/scribble.h")
+add_executable (scribble 
+    "src/scribble.cpp" 
+    "src/scribble.h" 
+    "src/graphics/window.h" 
+    "src/graphics/window.cpp" 
+    "libs/glad/src/glad.c"
+)
 
 target_include_directories(scribble PRIVATE 
     libs/glfw/include
