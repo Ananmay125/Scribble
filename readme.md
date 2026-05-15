@@ -8,3 +8,4 @@ Features ->
 - Saving functionality
 
 > Note: code might be a bit messed up.
+> Yet to add a lot of stuff (didn't even start on the networking..)

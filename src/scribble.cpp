@@ -1,4 +1,4 @@
-﻿// scribble.cpp 
+﻿// scribble.cpp
 #include "scribble.h"
 #include "graphics/window.h"
 

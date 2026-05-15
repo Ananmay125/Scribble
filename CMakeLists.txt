@@ -21,11 +21,15 @@ add_executable (scribble
     "src/networking/networkManager.cpp" 
     "src/networking/networkManager.h"
 
+    "src/graphics/draw.h" 
+    "src/graphics/draw.cpp" 
+    "src/graphics/shader.h"
 )
 
 target_include_directories(scribble PRIVATE 
     libs/glfw/include
     libs/glad/include   
+    libs/glm
     libs      
     libs/imgui
     libs/imgui/backends
