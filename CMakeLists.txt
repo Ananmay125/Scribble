@@ -12,9 +12,15 @@ add_subdirectory(libs/glfw)
 add_executable (scribble 
     "src/scribble.cpp" 
     "src/scribble.h" 
+
+    "libs/glad/src/glad.c"
+
     "src/graphics/window.h" 
     "src/graphics/window.cpp" 
-    "libs/glad/src/glad.c"
+
+    "src/networking/networkManager.cpp" 
+    "src/networking/networkManager.h"
+
 )
 
 target_include_directories(scribble PRIVATE 
