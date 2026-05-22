@@ -8,22 +8,21 @@ project ("scribble")
 
 add_subdirectory(libs/glfw)
 
-# Add source to this project's executable.
 add_executable (scribble 
     "src/scribble.cpp" 
-    "src/scribble.h" 
+    "src/scribble.h"
 
     "libs/glad/src/glad.c"
 
-    "src/graphics/window.h" 
-    "src/graphics/window.cpp" 
-
-    "src/networking/networkManager.cpp" 
-    "src/networking/networkManager.h"
-
+    "src/graphics/window.h"
+    "src/graphics/window.cpp"
     "src/graphics/draw.h" 
     "src/graphics/draw.cpp" 
     "src/graphics/shader.h"
+    "src/graphics/shader.cpp"
+
+    "src/networking/networkManager.cpp" 
+    "src/networking/networkManager.h"
 )
 
 target_include_directories(scribble PRIVATE 

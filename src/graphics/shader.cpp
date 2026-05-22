@@ -1,5 +1,7 @@
 #include "Shader.h"
 
+// Note: this was taken from another repository.. 
+
 Shader::Shader(const char* vertexFilePath, const char* fragmentFilePath) {
 
 	std::string vertexCode;

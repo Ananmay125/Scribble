@@ -33,6 +33,10 @@ void Window::pollEvents() {
 	glfwPollEvents();
 }
 
+GLFWwindow* Window::getWindow() {
+	return window;
+}
+
 void Window::clean() {
 	glfwDestroyWindow(window);
 	glfwTerminate();

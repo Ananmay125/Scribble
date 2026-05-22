@@ -6,6 +6,8 @@
 #include <fstream>
 #include <sstream>
 
+// Note: this was taken from another repository.. 
+
 class Shader {
 public:
 

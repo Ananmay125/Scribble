@@ -1,14 +1,22 @@
 #pragma once
+#include <glad/glad.h>
+#include <vector>
 
-#include <GLFW/glfw3.h>
-#include <glm/glm.hpp>
-#include <iostream>
+struct Stroke {
+    std::vector<float> points;
+};
 
-class Draw {
+class Whiteboard {
 public:
+    Whiteboard();
+    ~Whiteboard();
 
-	void DrawStuff(glm::vec2 oldPos, glm::vec2 newPos, float brushSize);
+    void startStroke();
+    void addPoint(float x, float y);
+    void clear();
+    void draw();
 
 private:
-
+    std::vector<Stroke> strokes;
+    unsigned int VAO, VBO;
 };

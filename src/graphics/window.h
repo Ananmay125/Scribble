@@ -14,6 +14,8 @@ public:
 	void pollEvents();
 	void clean();
 
+	GLFWwindow* getWindow();
+
 private:
 
 	GLFWwindow* window;
