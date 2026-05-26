@@ -26,6 +26,15 @@ add_executable (scribble
 
     "src/interface/interface.cpp" 
     "src/interface/interface.h"
+
+    # Interface stuff
+    "libs/imgui/imgui.cpp"
+    "libs/imgui/imgui_draw.cpp"
+    "libs/imgui/imgui_widgets.cpp"
+    "libs/imgui/imgui_tables.cpp"
+    # ImGui backends
+    "libs/imgui/backends/imgui_impl_glfw.cpp"
+    "libs/imgui/backends/imgui_impl_opengl3.cpp"
 )
 
 target_include_directories(scribble PRIVATE 
