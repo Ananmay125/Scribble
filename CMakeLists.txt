@@ -23,6 +23,9 @@ add_executable (scribble
 
     "src/networking/networkManager.cpp" 
     "src/networking/networkManager.h"
+
+    "src/interface/interface.cpp" 
+    "src/interface/interface.h"
 )
 
 target_include_directories(scribble PRIVATE 

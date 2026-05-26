@@ -49,7 +49,7 @@ int main() {
 
 	while (!window.shouldClose()) {
 
-		glClearColor(0.145f, 0.145f, 0.149f, 1.0f);
+		glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT);
 
 		tuffShader.use();
